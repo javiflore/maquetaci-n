@@ -1,0 +1,79 @@
+/*Fco. Javier Florencio*/
+*{
+	
+}
+
+body{
+	/* background-color: green; */
+	width: 1260px;
+	/* width: 100%; */
+	/* height: 500px; */
+	height: 97vh;
+}
+
+div#izquierda, #derecha, footer{
+	float: left;
+}
+
+#izquierda{ /* contenido en el main 1260px, heredados del body*/
+	background-color: pink;
+	/* width: 780px; */
+	width: 61.9047619047619%;
+	/* height: 370px; */
+	height: 78vh;
+	/* margin: 0 10px 0 20px; */
+	margin: 0 0.7936507936507937% 0 1.587301587301587%;
+	/* padding: 30px 10px 0 10px; */
+	padding: 30px 0.7936507936507937% 0;
+	text-align: justify;
+}
+
+#derecha{ /* contenido en el main 1260px*/
+	background-color: blue;
+	/*width: 400px;*/ 
+	width: 31.7460317%;
+	height: 82vh;
+	/* margin: 0 20px 0 10px; */
+	margin: 0 1.587301587301587% 0 0.7936507936507937%;
+}
+
+#imagen{ /*contenido en el div derecha de 400px */
+	/* margin: 50px 30px 0 30px; */
+	margin: 50px 7.5% 0;
+}
+
+#izquierda form{ /**/
+	background-color: white;
+	margin-top: 4em; /* 4em -> margen superior es 4 veces el tamaño de la letra del contenedor 1em = 16px */
+	/* margin-top: 16%; NOOOO FUNCIONA */
+	padding: 1em 0 1em 8.974358974358974%;
+}
+
+input{
+	/* width: 484px; */
+	width: 68.1690141%; /*cogemos de referencia el ancho del form sin el padding 710px*/
+	padding-left: 10px;
+	display: block;
+	margin-top: 10px;
+}
+
+input[type=submit]{ /* selector por atributo submit, para el botón */
+	/* width: 150px; */
+	width: 21.1267606%;
+	height: 2em; /* creo que no es la correcta al visualizar el doble sería 32px */
+	background-color: #D8D8D8;
+}
+
+footer{
+	background-color: gray;
+	height: 16vh;
+	width: 100%;
+	clear: left;
+}
+
+main{
+	background-color: yellow;
+	display: flow-root;
+	/*height: 400px;*/ /* por defecto aparece sin altura, por haber flotado los elementos que contiene */
+	/* overflow: hidden; */
+}
